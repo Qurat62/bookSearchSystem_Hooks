@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+    
+  }
+ 
+  nav{
+    /* background: #5b342e; */
+    background-color: #3d0c02;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background:#aa8782;
+    transition: .5s;
+  }
+  ul li:hover {
+    background:#aa8782;
+    transition: .5s;
+    padding:2px 2px;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+ 
+  /********************************************/
+  /* Firefox old*/
+@-moz-keyframes blink {
+  0% {
+      opacity:1;
+  }
+  50% {
+      opacity:0;
+  }
+  100% {
+      opacity:1;
+  }
+} 
+
+@-webkit-keyframes blink {
+  0% {
+      opacity:1;
+  }
+  50% {
+      opacity:0;
+  }
+  100% {
+      opacity:1;
+  }
+}
+/* IE */
+@-ms-keyframes blink {
+  0% {
+      opacity:1;
+  }
+  50% {
+      opacity:0;
+  }
+  100% {
+      opacity:1;
+  }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+  0% {
+      opacity:1;
+  }
+  50% {
+      opacity:0;
+  }
+  100% {
+      opacity:1;
+  }
+} 
+  /********************************************/
+
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #000;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s ;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #000;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }  
+      
+}
+ 
+  /******************** button styling start**************/
+  
+  .brown-border
+  {
+  border-top: #3d0c02;
+  border-bottom: #3d0c02;
+  box-shadow: 0px 2px 14px 0px #592720;
+  }
+ 
+  .button-color-brown
+  {
+  background-color: #3d0c02;
+  
+  }
+
+    .productButtonStyle
+    {
+     
+      border:1px groove;
+      border-color: #F9A602;
+      border-radius:5px;
+      color: white;
+      padding: 11px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+      
+      
+    }
+  
+    .productButtonStyle:hover {
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 30px 0 rgba(0,0,0,0.19);
+    }
+    .productButtonStyle.active,.productButtonStyle:hover{
+      background:#592720;
+      transition: .5s;
+    }
+  /******************** button styling  ends**************/
+  /**********Form css***************/
+.inputStyle{
+  width: 30%;
+  padding: 12px;
+  margin-top:100px;
+  margin-left:100px;
+  border-radius: 4px;
+  resize: vertical;  
+  border:1px solid;
+  border-color: #F9A602;
+}
+
+
+
+/************************************************/
+
+    /********** heading ************/
+    .heading
+    {
+    color: #fff;
+    text-align: left;
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+    
+    /*******************************/
+    
+      /***********************Desktop************************/
+  
+  /* 
+  
+  This query will take effect for any screen smaller than 760px
+  and also iPads specifically.
+  */
+  @media 
+  only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+   
+    .card-container
+    {
+      display: grid;
+    grid-template-columns: auto ;
+      color:white;
+      position: absolute;
+      top:75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #592720;
+      padding:50px 50px;
+      opacity: 0.9;
+      border-radius: 10px;
+    text-align: left;
+    overflow-y: scroll;
+  height: 400px;
+  width:80em;
+    
+    }
+  
+  .footer-section
+  {
+    display: grid;
+    grid-template-columns: 1fr; 
+    background-color:#3d0c02;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+    }
+    
+    /* ----------------------- first block starts desktop------------------------ */
+  
+   /* Tablet menu */
+    
+   @media all and (min-width: 468px) {
+   
+    
+ 
+  .suggestions
+  {
+    width: 360px;
+    background-color: white;
+margin-left:100px;
+    padding: 10px 10px;
+    text-align: left;
+    
+    
+  }
+  .card-container
+  {
+    display: grid;
+  grid-template-columns: auto auto;
+    color:white;
+    position: absolute;
+    top:65%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    background-color: #592720;
+    padding:50px 50px;
+    opacity: 0.9;
+    border-radius: 10px;
+  text-align: left;
+  overflow-y: scroll;
+height: 30em;
+width:70em;
+  }
+  .grid-detail{
+   
+    
+    text-align: center;
+  }
+ 
+}
